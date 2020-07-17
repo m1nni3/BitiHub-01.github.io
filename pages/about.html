@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: green solid 1px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/pages/products.html">Products</a>
+        </li>
+        <li>
+            <a href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+            <a href="/pages/about.html">About</a>
+        </li>
+    </ul>
+    <h1>About</h1>
+    <table style="width:30%">
+        <caption>Nyitvatartás</caption>
+
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Hétfő - Péntek</td>
+                <td>09:00</td>
+                <td>22:00</td>
+            </tr>
+            <tr>
+                <td>Szombat</td>
+                <td rowspan="2">10:00</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>Vasárnap</td>
+                <!-- <td>10:00</td>   
+                nem kell, mert fentebb összevontunk 2 sort ebben a cellában
+                -->
+                <td>12:00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3"> 
+                    &copy; 2020
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
